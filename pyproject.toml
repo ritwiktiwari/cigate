@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cigate"
+version = "0.0.1"
+description = "Python-first CI policy gate that validates repository hygiene and tooling standards."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [
+    { name = "Ritwik Tiwari" },
+]
+keywords = ["ci", "policy", "linting", "typing", "devtools"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Quality Assurance",
+    "Typing :: Typed",
+]
+dependencies = [
+    "typer>=0.9.0",
+]
+
+[project.scripts]
+cigate = "cigate.cli.main:app"
+
+[project.urls]
+Repository = "https://github.com/ritwiktiwari/cigate"
+Issues = "https://github.com/ritwiktiwari/cigate/issues"
