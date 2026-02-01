@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from enum import Enum
-from typing import Optional
 
 import typer
 
@@ -68,7 +67,7 @@ def check(
         "--run",
         help="Execute tools (mypy, ruff, etc.) instead of only checking configuration.",
     ),
-    root: Optional[str] = typer.Option(
+    root: str | None = typer.Option(
         None,
         "--root",
         "-r",
@@ -82,10 +81,7 @@ def check(
 
     Exit codes: 0 = pass, 1 = policy violations found, 2 = tool/config error.
     """
-    typer.echo(
-        f"[stub] cigate check: profile={profile.value}, "
-        f"format={output_format.value}, run={run}, root={root}"
-    )
+    typer.echo(f"[stub] cigate check: profile={profile.value}, format={output_format.value}, run={run}, root={root}")
 
 
 @app.command()
@@ -103,7 +99,7 @@ def fix(
         "-y",
         help="Skip confirmation prompts and apply all fixes.",
     ),
-    root: Optional[str] = typer.Option(
+    root: str | None = typer.Option(
         None,
         "--root",
         "-r",
@@ -115,9 +111,7 @@ def fix(
     Generates or updates configuration for type checkers, linters, and CI
     pipelines to satisfy the selected cigate profile.
     """
-    typer.echo(
-        f"[stub] cigate fix: typechecker={typechecker.value}, yes={yes}, root={root}"
-    )
+    typer.echo(f"[stub] cigate fix: typechecker={typechecker.value}, yes={yes}, root={root}")
 
 
 @app.callback()
