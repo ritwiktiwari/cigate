@@ -116,8 +116,7 @@ def fix(
     pipelines to satisfy the selected cigate profile.
     """
     typer.echo(
-        f"[stub] cigate fix: typechecker={typechecker.value}, "
-        f"yes={yes}, root={root}"
+        f"[stub] cigate fix: typechecker={typechecker.value}, yes={yes}, root={root}"
     )
 
 

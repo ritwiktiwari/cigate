@@ -1,5 +1,15 @@
 # cigate
 
+[![CI](https://github.com/ritwiktiwari/cigate/actions/workflows/ci.yml/badge.svg)](https://github.com/ritwiktiwari/cigate/actions/workflows/ci.yml)
+[![PyPI version](https://badge.fury.io/py/cigate.svg)](https://badge.fury.io/py/cigate)
+[![codecov](https://codecov.io/gh/ritwiktiwari/cigate/branch/main/graph/badge.svg)](https://codecov.io/gh/ritwiktiwari/cigate)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![ty](https://img.shields.io/badge/type--checked-ty-blue?labelColor=orange)](https://github.com/astral-sh/ty)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-yellow.svg)](https://github.com/ritwiktiwari/cigate/blob/main/LICENSE)
+
+
 **Python-first CI policy gate** -- validates repository hygiene and tooling
 standards before code reaches your CI pipeline.
 
